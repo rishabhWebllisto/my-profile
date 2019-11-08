@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+
+    <title>Chat</title>
+    <style>
+        .chat-header {
+            background-color: #5757fb;
+            color: #fff;
+        }
+
+        .user-image img{
+            height: 40px;
+            width: 40px;
+            border: 3px solid #fff;
+        }
+        .user-image-chat {
+            height: 40px;
+            width: 40px;
+            border: 3px solid #5757fb;
+        }
+
+        .user-image .online-image {
+            height: 5px;
+            width: 5px;
+        }
+
+        .right-icon {
+            font-size: 25px;
+        }
+        
+        .meassage {
+            position: relative;
+            left: 50px;
+            width: 450px;
+            padding: 10px;
+        }
+
+        .message-row-right{
+             position: relative;
+           left: 260px;
+           width: 450px;
+            
+        }
+        .chat-contact-text {
+            position: relative;
+            left: 50px;
+            width: 450px;
+            padding: 10px;
+        }
+
+        .chat-body {
+        	max-height: 400px;
+  overflow: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Contact section -->
+            <div class="col-12 col-md-4">
+                <div class="py-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="py-3">
+                    <p class="text-muted">Contact</p>
+                    <div class="user-image position-absolute">
+                        <img class="rounded-circle" src="./images/big.jpg">
+                    </div>
+                    <div class="chat-contact-text">
+                        <span>Blake Austin</span>
+                        <p>jkashgfa askdjhkh jk</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Chat section -->
+            <div class="col-12 col-md-8">
+
+                <div class="chat-header py-3 px-2">
+                    <div class="user-image d-inline">
+                        <img class="rounded-circle" src="./images/big.jpg">
+                        <span>Blake Austin</span>
+                        <img class="rounded-circle online-image" src="./images/online.png">
+                    </div>
+                    <div class="d-inline float-right px-3 right-icon">
+                        <i class="fas fa-phone-volume px-1"></i>
+                        <i class="fas fa-cog px-1"></i>
+                    </div>
+                </div>
+
+                <div class="chat-body">
+                    <div class="message-row mt-3 mb-3">
+                        <div class="">
+                            <img class=" user-image-chat rounded-circle d-inline" src="./images/big.jpg">
+                        </div>
+                        <div class=" meassage border py-3">
+                            <h6>Blake Austin</h6>
+                            <span class="text-muted">
+                                Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf
+                                Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="message-row-right text-right border py-3 px-3">
+                        <span class=" text-muted">
+                            Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf
+                                Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf</span>
+                    </div>
+
+                    <div class="message-row mt-3 mb-3">
+                        <div class="user-image-chat position-absolute">
+                            <img class="rounded-circle d-inline" src="./images/big.jpg">
+                        </div>
+                        <div class=" meassage border py-3">
+                            <h6>Blake Austin</h6>
+                            <span class="text-muted">
+                                Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf
+                                Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="message-row-right text-right border py-3 px-3">
+                        <span class=" text-muted">
+                            Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf
+                                Blake Austin Hello lsoifs sakjfhasiosfd hsjkadhfkjs jhksadfhjs sdfhjksdhf</span>
+                    </div>
+
+                </div>
+
+                <div class="chat-footer mt-5 mb-5">
+                    <input type="text" name="" class="from-control w-100">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
