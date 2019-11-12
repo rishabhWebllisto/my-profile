@@ -107,6 +107,35 @@
 	    object-fit: cover;
 	}
 
+	/*contact section*/
+	.paddsection {
+	    padding-top: 90px;
+	    padding-bottom: 90px;
+	}
+
+	/*footer section*/
+	.footer-section {
+	    background: #f7f7f7;
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+	}
+
+	.footer-section .socials-media ul {
+	    display: inline-block;
+	    float: none;
+	    margin: 0 0 20px 0;
+	}
+
+	.footer-section .socials-media ul li a {
+	    font-size: 24px;
+	    color: #999; 
+	    letter-spacing: 0.1em;
+	    font-weight: 500;
+	    background: transparent;
+	    text-transform: uppercase;
+	}
+
+
    </style>
  </head>
  <body>
@@ -141,7 +170,7 @@
 	    </div>
   	</section>
 
-  	<!-- About Section -->
+  	<!-- About Section start -->
   	<section class="about-section">
   		<div class="container-fluid">
 	        <div class="row">
@@ -165,6 +194,103 @@
 	        </div>
 	    </div>
   	</section>
+  	<!-- About Section end -->
+  	
+  	<!-- Contact section start here -->
+  	<section class="contact-section paddsection">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-6">
+  					<div class="contact-contact">
+
+		              <h2 class="mb-30">GET IN TOUCH</h2>
+
+		              <ul class="contact-details">
+		                <li><span>23 Main, Street</span></li>
+		                <li><span>New York, United States</span></li>
+		                <li><span>+88 01912704287</span></li>
+		                <li><span>example@example.com</span></li>
+		              </ul>
+		            </div>
+  				</div>
+
+  				<div class="col-lg-6">
+  					<form action="" method="post" role="form" class="contactForm">
+		              <div class="row">
+
+		                <div id="sendmessage">Your message has been sent. Thank you!</div>
+		                <div id="errormessage"></div>
+
+		                <div class="col-lg-6">
+		                  <div class="form-group contact-block1">
+		                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+		                    <div class="validation"></div>
+		                  </div>
+		                </div>
+
+		                <div class="col-lg-6">
+		                  <div class="form-group">
+		                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+		                    <div class="validation"></div>
+		                  </div>
+		                </div>
+
+		                <div class="col-lg-12">
+		                  <div class="form-group">
+		                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+		                    <div class="validation"></div>
+		                  </div>
+		                </div>
+
+		                <div class="col-lg-12">
+		                  <div class="form-group">
+		                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+		                    <div class="validation"></div>
+		                  </div>
+		                </div>
+
+		                <div class="col-lg-12">
+		                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+		                </div>
+
+		              </div>
+		            </form>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  		
+  	<!-- Contact section end here -->
+
+  	<!-- Footer section start here -->
+  	<section class="footer-section text-center">
+  		<div class="container">
+  			<div class="socials-media">
+  				 <ul class="list-unstyled list-inline">
+	               	<li class="list-inline-item">
+	               		<a href=""><i class="fab fa-facebook-f"></i></a>
+	               	</li>
+	               	<li class="list-inline-item">
+	               		<a href=""><i class="fab fa-linkedin"></i></a>
+	               	</li>
+	               	<li class="list-inline-item">
+	               		<a href=""><i class="fab fa-instagram"></i></a>
+	               	</li>
+	               	<li class="list-inline-item">
+	               		<a href=""><i class="fab fa-github"></i></a>
+	               	</li>
+               	</ul>
+  			</div>
+  			<p class="text-muted">© Copyrights webTechLover. All rights reserved.</p>
+  			<div class="credits">
+  				<span class="text-muted">Designed by</span>
+  				<a href="https://bootstrapmade.com/">Rishabh K Dwivedi</a>
+  			</div>
+  		</div>
+  	</section>
+  	
+
+  	<!-- Footer section end here -->
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
