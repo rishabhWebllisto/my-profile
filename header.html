@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      	<!-- Bootstrap CSS -->
+      	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+      	<title>Profile</title>
+      	<style type="text/css">
+         	.main-header .logo {
+	         	background-color: #367fa9;
+	         	color: #fff;
+	         	border-bottom: 0 solid transparent;
+         	}
+
+         	.main-header .logo {
+		         -webkit-transition: width .3s ease-in-out;
+		         -o-transition: width .3s ease-in-out;
+		         transition: width .3s ease-in-out;
+		         display: block;
+		         float: left;
+		         height: 56px;
+		         font-size: 20px;
+		         line-height: 50px;
+		         text-align: center;
+		         width: 230px;
+		         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		         padding: 0 15px;
+		         font-weight: 300;
+		         overflow: hidden;
+	        }
+
+	        .navbar {
+	         	background-color: #3c8dbc;
+	        }
+
+	        .navbar-nav>.user-menu .user-image {
+			    float: left;
+			    width: 25px;
+			    height: 25px;
+			    border-radius: 50%;
+			    margin-right: 10px;
+			    margin-top: -2px;
+			}
+
+			.navbar-nav>.user-menu>.dropdown-menu {
+			    border-top-right-radius: 0;
+			    border-top-left-radius: 0;
+			    padding: 1px 0 0 0;
+			    border-top-width: 0;
+			    width: 280px;
+			    margin-top: 16px;
+			}
+
+			ul.dropdown-menu.show {
+			    position: absolute;
+			    right: 0px;
+			    left: auto;
+			}
+			.dropdown-menu {
+			    box-shadow: none;
+			    border-color: #eee;
+			    right: 0px;
+			}
+			.navbar-nav>.user-menu>.dropdown-menu>li.user-header {
+			    height: 175px;
+			    padding: 10px;
+			    text-align: center;
+			}
+
+			.navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
+			    z-index: 5;
+			    height: 90px;
+			    width: 90px;
+			    border: 3px solid;
+			    border-color: transparent;
+			    border-color: rgba(255,255,255,0.2);
+			    border-radius: 50%;
+			}
+
+			.main-header li.user-header {
+				background-color: #3c8dbc;
+			}
+
+
+			.navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+			    z-index: 5;
+			    color: #fff;
+			    color: rgba(255,255,255,0.8);
+			    font-size: 17px;
+			    margin-top: 10px;
+			}
+
+			/*Side bar */
+
+
+			.main-sidebar {
+			    position: relative;
+			    top: 0;
+			    left: 0;
+			    min-height: 100%;
+			    width: 230px;
+			    z-index: 810;
+			    background-color: #222d32;
+			}
+
+			.sidebar {
+			    padding-bottom: 10px;
+			}
+
+			.uesr-panel {
+			    position: relative;
+			    width: 100%;
+			    padding: 10px;
+			    overflow: hidden;
+			}
+
+			.pull-left.side-image img {
+			    width: 100%;
+			    max-width: 45px;
+			    height: auto;
+			    border-radius: 50%;
+			}
+
+			.pull-left.info {
+			    padding: 5px 5px 5px 15px;
+			    line-height: 1;
+			    position: absolute;
+			    left: 55px;
+			    bottom: 5px;
+			}
+
+			.pull-left.info p {
+			    font-weight: 600;
+			    margin-bottom: 9px;
+			}
+
+			.sidebar-form {
+			    border-radius: 3px;
+			    border: 1px solid #374850;
+			    margin: 10px 10px;
+			}
+
+			.pull-left.info a {
+			    text-decoration: none;
+			    padding-right: 5px;
+			    margin-top: 3px;
+			    font-size: 11px;
+			}
+
+			.sidebar-menu li.header {
+			    padding: 10px 25px 10px 15px;
+			    font-size: 12px;
+			}
+
+			.sidebar-menu>li.header {
+			    color: #4b646f;
+			    background: #1a2226;
+			}
+			.treeview-menu {
+			    display: none;
+			    list-style: none;
+			    padding: 0;
+			    margin: 0;
+			    padding-left: 5px;
+			}
+
+			.sidebar-menu>li.active>a {
+			    border-left-color: #3c8dbc;
+			}
+
+			.sidebar a {
+			    color: #b8c7ce;
+			}
+
+			.sidebar-menu>li>a {
+			    border-left: 3px solid transparent;
+			}
+
+			.sidebar-menu>li>a {
+			    padding: 12px 5px 12px 15px;
+			    display: block;
+			    text-decoration: none;
+			}
+
+			.sidebar-menu li>a>.pull-right-container {
+			    position: absolute;
+			    right: 10px;
+			    top: 84%;
+			    margin-top: -11px;
+			}
+    	</style>
+   </head>
+   <body>
+      <!-- Header start here -->
+      <header class="main-header">
+         <div class="d-inline">
+            <a href="" class="logo text-decoration-none">
+	            <span class="logo-mini"><b>A</b>LT</span>
+	            <span class="logo-lg"><b>Admin</b>LTE</span>
+            </a>
+         </div>
+         <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+               <a class="navbar-brand" href="#">H</a>
+               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  	<li class="dropdown user user-menu">
+                    	<a href="#" class="dropdown-toggle text-light text-decoration-none" data-toggle="dropdown" aria-expanded="false">
+                     		<img src="images/big.jpg" class="user-image" alt="User Image">
+                    		<span class="hidden-xs">Alexander Pierce</span>
+                     	</a>
+                    	<ul class="dropdown-menu">
+                        <!-- User image -->
+                        <li class="user-header">
+                           <img src="images/big.jpg" class="img-circle" alt="User Image">
+                           <p>
+                              Alexander Pierce - Web Developer
+                              <small>Member since Nov. 2012</small>
+                           </p>
+                        </li>
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                           <div class="pull-left">
+                              <a href="#" class="btn btn-default btn-flat">Profile</a>
+                              <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+
+         <div class="main-sidebar">
+         	<section class="sidebar">
+         		<div class="uesr-panel">
+					<div class="pull-left side-image">
+						<img src="images/big.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p class="text-light">Alexander Pierce</p>
+						<a href="#" class="text-light"><i class="fa fa-circle text-success"></i> Online</a>
+					</div>
+         		</div>
+         		<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+					  <input type="text" name="q" class="form-control" placeholder="Search...">
+					  <span class="input-group-btn">
+					        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+					        </button>
+					      </span>
+					</div>
+				</form>
+				<ul class="sidebar-menu navbar-nav">
+					<li class="header">MAIN NAVIGATION</li>
+					<li class="active treeview" style="height: auto;">
+					  	<a href="#">
+					   		<i class="fas fa-tachometer-alt"></i></i> <span>Dashboard</span>
+					   		<span class="pull-right-container">
+					      	<i class="fa fa-angle-left pull-right"></i>
+					    </span>
+					  </a>
+					</li>
+					<li class="treeview">
+			          <a href="#">
+			            <i class="fa fa-files-o"></i>
+			            <span>Layout Options</span>
+			            <span class="pull-right-container">
+			              <span class="label label-primary pull-right">4</span>
+			            </span>
+			          </a>
+			          <ul class="treeview-menu">
+			            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+			            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+			            <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+			            <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+			          </ul>
+			        </li>
+			        <li class="treeview">
+			          <a href="#">
+			            <i class="fa fa-files-o"></i>
+			            <span>Layout Options</span>
+			            <span class="pull-right-container">
+			              <span class="label label-primary pull-right">4</span>
+			            </span>
+			          </a>
+			          <ul class="treeview-menu">
+			            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+			            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+			            <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+			            <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+			          </ul>
+			        </li>
+				</ul>
+         	</section>
+         </div>
+      </header>
+      <!-- Header end here -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>
