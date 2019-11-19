@@ -8,8 +8,14 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="slick/slick.css">
    <title>Profile</title>
    <style type="text/css">
+   	/*headersection*/
+   	.header-section {
+   		display: block
+   	}
+
     .banner-img {
 		background-image: url("images/rishabh1.jpg");
 		background-size: 100%;
@@ -137,9 +143,90 @@
 
 	/*Portfolio section*/
 
+	/*Slider section*/
+	.slider {
+	    margin: 0 auto;
+	}
+
+	img {
+	    width: 200px;
+	    height: 200px;
+	}
+	/*services-section*/
+	.services-section{
+	    background: #f7f7f7;
+	    position: relative;
+	    padding-bottom: 80px;
+	}
+
+	.btn {
+	    background: #333;
+	    border: medium none;
+	    border-radius: 0;
+	    color: #fff;
+	    font-size: 12px;
+	    height: 50px;
+	    line-height: 50px;
+	    padding: 0 30px;
+	    text-transform: uppercase;
+	}
+
+	.form-control {
+	    background-color: transparent;
+	    border: 1px solid #999;
+	    border-radius: 0;
+	    color: #999999;
+	    font-size: 12px;
+	    font-weight: 500;
+	    height: 50px;
+	    letter-spacing: 0.1em;
+	    padding-left: 10px;
+	    margin: 0 0 25px 0;
+	    line-height: 14px;
+	    text-transform: uppercase;
+	}
+
+	h2 {
+	    color: #292929;
+	    font-weight: 600;
+	}
+	.contact-details {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	}
    </style>
  </head>
  <body>
+ 	<!-- Header section start -->
+ 	<header class="header-section">
+ 		<div class="container">
+ 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			    <a class="navbar-brand" href="#">Hidden brand</a>
+			    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Services</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Contact</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+ 		</div>
+ 	</header>
+ 	<!-- Header section end -->
+
  	<!-- Banner Section -->
     <section class="blog-banner">
   		<div class="home-overly"></div>
@@ -172,8 +259,8 @@
   	</section>
 
   	<!-- About Section start -->
-  	<section class="about-section">
-  		<div class="container-fluid">
+  	<section class="about-section pb-5">
+  		<div class="container">
 	        <div class="row">
 	        	<div class="col-lg-4">
 	        		<div class="border-div">
@@ -197,8 +284,47 @@
   	</section>
   	<!-- About Section end -->
 
+  	<!-- Services section  start-->
+  	<section class="services-section">
+  		<div class="container">
+  			<div class="slider">
+				<div class="col-12 col-sm-6 col-md-4">
+                    <div class="card m_b_10 px-3 py-3 font-weight-bold border-0 text-center">
+                        WordPress                    
+                	</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+                    <div class="card m_b_10 py-3 px-3 font-weight-bold border-0 text-center">
+                        PHP Development                    
+                	</div>
+				</div>	
+				<div class="col-12 col-sm-6 col-md-4">
+                    <div class="card m_b_10 py-3 px-3 font-weight-bold border-0 text-center">
+                        Web Design                    
+                	</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+                    <div class="card m_b_10 py-3 px-3 font-weight-bold border-0 text-center">
+                        Reactjs                   
+                	</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+                    <div class="card m_b_10 py-3 px-3 font-weight-bold border-0 text-center">
+                       Angularjs                   
+                	</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+                    <div class="card m_b_10 py-3 px-3 font-weight-bold border-0 text-center">
+                       Javascript                   
+                	</div>
+				</div>
+			</div>
+  		</div>
+  	</section>
+  	<!-- Services section end  -->
+  	
   	<!-- My Portfolio Section start here-->
-  	<section class="portfolio-section">
+  	<!-- <section class="portfolio-section">
   		<div class="container">
   			<div class="row">
   				<div class="col">
@@ -206,7 +332,7 @@
   				</div>
   			</div>
   		</div>
-  	</section>
+  	</section> -->
   	<!-- My Portfolio Section end here-->
   	
   	<!-- Contact section start here -->
@@ -218,11 +344,11 @@
 
 		              <h2 class="mb-30">GET IN TOUCH</h2>
 
-		              <ul class="contact-details">
-		                <li><span>23 Main, Street</span></li>
-		                <li><span>New York, United States</span></li>
-		                <li><span>+88 01912704287</span></li>
-		                <li><span>example@example.com</span></li>
+		              <ul class="contact-details text-muted">
+		                <li><span>104 Subhas nagr</span></li>
+		                <li><span>Main road, Indore</span></li>
+		                <li><span>+91 7905786264</span></li>
+		                <li><span>rdwivedi183@gmail.com</span></li>
 		              </ul>
 		            </div>
   				</div>
@@ -231,7 +357,6 @@
   					<form action="" method="post" role="form" class="contactForm">
 		              <div class="row">
 
-		                <div id="sendmessage">Your message has been sent. Thank you!</div>
 		                <div id="errormessage"></div>
 
 		                <div class="col-lg-6">
@@ -309,6 +434,7 @@
    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+ 	<script type='text/javascript' src='slick/slick.min.js'></script>
  	<script type="text/javascript">
  		// Type-script
 	   	$(function(){
@@ -331,6 +457,41 @@
 				resetCallback: function() {}
 			});
 		});
+
+	   	/* slider*/
+	   	$('.slider').slick({
+	   		autoplay:true,
+			autoplaySpeed:1500,
+		    slidesToShow: 5,
+		    slidesToScroll: 1,
+		    dots: true,
+		    infinite: true,
+		    cssEase: 'linear'
+		});
+
+		jQuery(window).scroll(function() {    
+		  if (jQuery(window).width() > 767) {
+		   var scroll = $(window).scrollTop();
+		    if (scroll >= 580) {
+
+		        jQuery("body").addClass("scrolled");
+		    } else {
+		        jQuery("body").removeClass("scrolled");
+		    }
+
+		    if (scroll >= 146) {
+		        jQuery("body").addClass("side_menus");
+		    } else {
+		        jQuery("body").removeClass("side_menus");
+		    }
+
+		  } else {
+		    jQuery('.navbar-nav .nav-link').click(function(){
+		       jQuery('.navbar-toggler').click();
+		    });
+		  }  
+		});   
+
 	</script>
 </body>
 </html>
